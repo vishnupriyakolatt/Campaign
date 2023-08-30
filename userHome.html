@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Admin DashBoard</title>
+    <link rel="stylesheet" href="./usehome.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div class="sidebar">
+     
+     
+    </div>
+    <!-- main content -->
+    <section class="home-section">
+      <div class="maincontent">
+        <div class="headerwrapperemail">
+          <div class="headertitleemail"></div>
+
+          <div class="contact-info">
+            <div class="userinfo">
+              <img src="./image/1707088.png" class="userpic" />
+              
+              <section class="modal container">
+                <!-- <button class="modal__button" id="open-modal">
+                    Open Modal
+                </button> -->
+            <!-- HTML !-->
+            <button
+            class="modal__button"
+            id="open-modal"
+            role="button"
+            > John@gmail.com</button
+            > 
+
+
+              
+        
+     
+        
+ 
+
+
+</div>
+
+<!--  -->
+
+          </div>
+
+        </div>
+      
+        <!--  -->
+        <div class="cardcontainer">
+          <div class="cardswrapper">
+            <section class="products">
+              <div class="all-cards">
+                <div class="product">
+     <div class="fullcontrol">
+                   <h1>Task Details</h1>
+                   <div class="userinfo">
+                    <div class="searchbox">
+                      <i class="bx bx-search"></i>
+                      <input type="text" placeholder="search..." />
+                    </div>
+                   <!--  -->
+              
+          </div>
+
+                   <div class="card">
+                
+                    <div class="container">
+                      <h4><b>
+                        Cp1ev1
+                      </b></h4> 
+                      <h6>Current Task employees</h6> 
+                              <p>1.vishnupriya</p>
+                                <p>2.johnny</p>
+                    </div>
+                    <label class="container">Task included or not?
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark"></span>
+                      </label>
+                  </div>
+               
+                  <div class="card">
+                
+                    <div class="container">
+                      <h4><b>
+                        Cp1ev2
+                      </b></h4> 
+                      <h6>Current Task employees</h6> 
+                              <p>1.vishnupriya</p>
+                                <p>2.johnny</p>
+                    </div>
+                    <label class="container">Task included or not?
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark"></span>
+                      </label>
+                  </div>
+
+
+                  
+                </div>
+
+              </div>
+            </section>
+            
+          </div>
+        </div>
+        
+       
+       <!--  -->
+            </div>
+
+ </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </div>
+  
+        </div>
+      </div>
+    </section>
+
+    
+
+
+
+
+    <!-- main content -->
+    <script>
+      let sidebar = document.querySelector(".sidebar");
+      let closeBtn = document.querySelector("#btn");
+      let searchBtn = document.querySelector(".bx-search");
+    
+      closeBtn.addEventListener("click", ()=>{
+        sidebar.classList.toggle("open");
+        menuBtnChange();
+      });
+    
+      searchBtn.addEventListener("click", ()=>{ 
+        sidebar.classList.toggle("open");
+        menuBtnChange(); 
+      });
+    
+     
+      function menuBtnChange() {
+       if(sidebar.classList.contains("open")){
+         closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");
+       }else {
+         closeBtn.classList.replace("bx-menu-alt-right","bx-menu");
+       }
+      }
+
+
+
+
+      const openBtn = document.getElementById('open-modal');
+    const modalContainer = document.getElementById('modal-container');
+    const closeBtns = document.querySelectorAll('.close-modal');
+
+    openBtn.addEventListener('click', () => {
+      modalContainer.style.display = 'flex'; 
+    });
+
+    closeBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        modalContainer.style.display = 'none';
+      });
+    });
+
+
+
+
+
+
+
+
+
+      </script>
+
+
+
+
+    
+  </body>
+</html>

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Admin DashBoard</title>
+    <link rel="stylesheet" href="./admin.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="logo-details">
+        <div class="logo_name">AdminView</div>
+        <i class="bx bx-menu" id="btn"></i>
+      </div>
+      <ul class="nav-list">
+        <li>
+          <i class="bx bx-search"></i>
+          <input type="text" placeholder="Search..." />
+          <span class="tooltip">Search</span>
+        </li>
+        <li>
+          <a href="./admin.html">
+            <i class="bx bx-grid-alt"></i>
+            <span class="links_name">Dashboard</span>
+          </a>
+          <span class="tooltip">Dashboard</span>
+        </li>
+        <li>
+          <a href="./campaign.html">
+            <i class="bx bx-calendar"></i>
+            <span class="links_name">Campaigns</span>
+          </a>
+          <span class="tooltip">Campaigns</span>
+        </li>
+        <li>
+          <a href="./events.html">
+            <i class="bx bx-calendar-plus"></i>
+            <span class="links_name">Events</span>
+          </a>
+          <span class="tooltip">Events</span>
+        </li>
+        <li>
+          <a href="./Task.html">
+            <i class="bx bxs-briefcase"></i>
+            <span class="links_name">Tasks</span>
+          </a>
+          <span class="tooltip">Tasks</span>
+        </li>
+        <li>
+          <a href="./Task.html">
+            <i class="bx bxs-user-detail"></i>
+            <span class="links_name">Users</span>
+          </a>
+          <span class="tooltip">Users</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-log-out" id="log_out"></i>
+            <span class="links_name">Logout</span>
+          </a>
+          <span class="tooltip">Logout</span>
+        </li>
+      </ul>
+    </div>
+    <!-- main content -->
+    <section class="home-section">
+      <div class="maincontent">
+        <div class="headerwrapperemail">
+          <div class="headertitleemail"></div>
+
+          <div class="contact-info">
+            <div class="userinfo">
+              <img src="./image/1707088.png" class="userpic" />
+              
+              <section class="modal container">
+                <!-- <button class="modal__button" id="open-modal">
+                    Open Modal
+                </button> -->
+            <!-- HTML !-->
+            <button
+            class="modal__button"
+            id="open-modal"
+            role="button"
+            > view profile</button
+            > 
+
+
+                <div class="modal__container" id="modal-container">
+                    <div class="modal__content">
+                        <div class="modal__close close-modal" title="Close">
+                            <i class='bx bx-x'></i>
+                        </div>
+            
+                        <img src="./image/1707088.png" alt="" class="modal__img">
+            
+                        <h1 class="modal__title">John Doe</h1>
+                        <p class="modal__description">Email :<span>John@gmail.com</span></p>
+                                    
+<button class="button-33" role="button">Edit profile</button>
+            
+                        <button class="modal__button-link close-modal">
+                          <i class='bx bxs-comment-x'></i>
+                        </button>
+                    </div>
+                </div>
+              </section>
+          
+            </div>
+          </div>
+        
+        </div>
+        <!--  -->
+        <div class="headerwrapper">
+          <div class="headertitle">
+            <h2><strong>My Events</strong></h2>
+          </div>
+
+          <div class="userinfo">
+            <div class="searchbox">
+              <i class="bx bx-search"></i>
+              <input type="text" placeholder="search..." />
+            </div>
+           <!--  -->
+  <button class="button-27" id="open-modal-create"><i class='bx bx-plus'></i>Create</button>
+  </div>
+</div>
+</div>
+
+</div>
+
+<!--  -->
+
+          </div>
+
+        </div>
+      
+        <!--  -->
+        <div class="cardcontainer">
+          <div class="cardswrapper">
+            <section class="products">
+              <div class="all-cards">
+                <div class="product">
+              
+      <h4 class="product-title"><strong>Cp1ev1</strong></h4>
+
+    <div class="paragraph">
+      <p class="detail"><i class='bx bx-calendar'></i><strong>start Date:</strong> Aug 21 2023</p> 
+      <p class="detail"><strong>Description:</strong>-</p>
+      <p class="detail"><strong>Location: </strong>3</p>
+      <p class="detail"><strong>start-time:</strong></p>
+      <p class="detail"><strong>End-time:</strong>-</p>
+      <p class="detail"><strong>Task:</strong>-</p>
+
+    </div>
+    <div class="btn-group">
+      <button class="w3-button w3-xlarge w3-circle w3-black"><i class='bx bxs-low-vision' ></i></button>
+      <button class="w3-button w3-xlarge w3-circle w3-black"><i class='bx bxs-pencil'></i></button>
+      <button class="w3-button w3-xlarge w3-circle w3-black"><i class='bx bxs-trash'></i></button>
+    </div>
+  </div>
+  <div class="product">
+  
+<h4 class="product-title"><strong>Cp2ev1</strong></h4>
+
+<div class="paragraph">
+    <p class="detail"><i class='bx bx-calendar'></i><strong>start Date:</strong> Aug 21 2023</p> 
+    <p class="detail"><strong>Description:</strong>-</p>
+    <p class="detail"><strong>Location: </strong>2</p>
+    <p class="detail"><strong>start-time:</strong></p>
+    <p class="detail"><strong>End-time:</strong>-</p>
+    <p class="detail"><strong>Task:</strong>-</p>
+</div>
+<div class="btn-group">
+  <button class="w3-button w3-xlarge w3-circle w3-black"><i class='bx bxs-low-vision' ></i></button>
+  <button class="w3-button w3-xlarge w3-circle w3-black"><i class='bx bxs-pencil'></i></button>
+  <button class="w3-button w3-xlarge w3-circle w3-black"><i class='bx bxs-trash'></i></button>
+</div>
+</div>
+               <div class="product">
+              
+    <h4 class="product-title"><strong>Cp2ev2</strong></h4>
+
+  <div class="paragraph">
+    <p class="detail"><i class='bx bx-calendar'></i><strong>start Date:</strong> Aug 21 2023</p> 
+    <p class="detail"><strong>Description:</strong>-</p>
+    <p class="detail"><strong>Location: </strong>1</p>
+    <p class="detail"><strong>start-time:</strong></p>
+    <p class="detail"><strong>End-time:</strong>-</p>
+    <p class="detail"><strong>Task:</strong>-</p>
+  </div>
+  <div class="btn-group">
+    <button class="w3-button w3-xlarge w3-circle w3-black"><i class='bx bxs-low-vision' ></i></button>
+    <button class="w3-button w3-xlarge w3-circle w3-black"><i class='bx bxs-pencil'></i></button>
+    <button class="w3-button w3-xlarge w3-circle w3-black"><i class='bx bxs-trash'></i></button>
+  </div>
+</div>
+
+               
+
+
+
+</div>
+
+
+              </div>
+            </section>
+            
+          </div>
+        </div>
+        
+       
+       <!--  -->
+            </div>
+
+ </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </div>
+  
+        </div>
+      </div>
+    </section>
+
+    
+
+
+
+
+    <!-- main content -->
+    <script>
+      let sidebar = document.querySelector(".sidebar");
+      let closeBtn = document.querySelector("#btn");
+      let searchBtn = document.querySelector(".bx-search");
+    
+      closeBtn.addEventListener("click", ()=>{
+        sidebar.classList.toggle("open");
+        menuBtnChange();
+      });
+    
+      searchBtn.addEventListener("click", ()=>{ 
+        sidebar.classList.toggle("open");
+        menuBtnChange(); 
+      });
+    
+     
+      function menuBtnChange() {
+       if(sidebar.classList.contains("open")){
+         closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");
+       }else {
+         closeBtn.classList.replace("bx-menu-alt-right","bx-menu");
+       }
+      }
+
+
+
+
+      const openBtn = document.getElementById('open-modal');
+    const modalContainer = document.getElementById('modal-container');
+    const closeBtns = document.querySelectorAll('.close-modal');
+
+    openBtn.addEventListener('click', () => {
+      modalContainer.style.display = 'flex'; 
+    });
+
+    closeBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        modalContainer.style.display = 'none';
+      });
+    });
+
+
+
+
+
+
+
+
+
+      </script>
+
+
+
+
+    
+  </body>
+</html>
